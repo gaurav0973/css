@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <!-- internal CSS -->
+    <style>
+        /* univversal selector */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 20px solid red;
+            padding: 30px;
+            margin: 40px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="box">
+        Box
+    </div>
+    <div class="box">
+        Box
+    </div>
+
+
+</body>
+</html>
+
+<!-- 
+    Padding -> content ko border se alag karna
+    Margin -> ek element ko dusre element se alag karna
+    Box six = border + padding + content_size
+    BUT IF we want to measure our box size from the border itsef , we have something called
+    -> box-sizing
+ -->

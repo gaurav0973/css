@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h1{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: orange;
+        }
+        .cpurple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+</html>
+
+<!-- 
+    LERANINGS
+    1. if selectors are of the same type then jo sabse niche hoga vo jitega
+    2. Specificity order is applied if the selectors are not same
+     -> inline CSS
+     -> id selector
+     -> class selector / attribute selector
+     -> element selector
+     -> universal selector
+    3. if it is marked important , then it has to be applied at any cost
+    4. in order to  calculate the specifity order for various items then we have to add them 
+ --> 

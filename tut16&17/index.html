@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <!-- Internal CSS  -->
+    <style>
+        /* Element Selector */
+        div{
+            background-color: yellow;
+        }
+
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child selector */
+        /* div ke just baad agar paragraph hai to uski baat ho rahi hai */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendent Selector */
+        /* div ke baad kahi par bhi agar p ho to uski baat ho arhi hai */
+        div p {
+            color: orange;
+        }
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Psudo selector */
+        a:visited{
+            color:yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <!-- Element -->
+    <div>
+        I am a Div
+    </div>
+
+    <!-- Class -->
+    <div class="red">
+        I am class div
+    </div>
+
+    <!-- Id -->
+    <div id="green">
+        I am Id div
+    </div>
+
+    <!-- Child -> p is a child of div ie.-> div ke  andara paeagrapg -->
+    <div>
+        <p>Hello kya haal chaal</p>
+    </div>
+
+    <!-- NOTE -->
+    <!-- This is div -> article -> paragraph -->
+    <div>
+        <article>
+            <p>Kya kar rahe ho bhai</p>
+        </article>
+    </div>
+
+    <!-- Psudo selector -->
+    <a href="http://www.google.com">Go to Google</a>
+
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+
+</body>
+</html>
+
+
+<!-- 
+------LEARNING----------
+1. Element Selector
+2. Class selector
+3. Id selector
+4. child selector
+5. Descendent selector
+6. universal selector
+7. psudo selelctor -> hoda dimaak lagega 
+------------------------
+ -->

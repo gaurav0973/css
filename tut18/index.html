@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <!-- Internal CSS -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: 
+            aqua;
+        }
+        .box1{
+            color: yellow;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+        }
+        .box2{
+            color: red;
+        }
+        /* 
+        1. class=box -> properties which is applied to all the box class eleemnts
+        2. box1, box2 class are the properties only specified to particular box class
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a Box
+    </div>
+    <div class="box box2">
+        I am another Box
+    </div>
+</body>
+</html>
+
+<!-- 
+LEARNINGS
+1. All the things in CSS in box -> div,container,span
+2. keep in mind that
+    -> content ke baad hota hia padding
+    -> padding ke baad border
+    -> border ke baad aata hai margin
+3. Box six = border + padding + content_size
+    BUT IF we want to measure our box size from the border itsef , we have something called
+    -> box-sizing(IMPORTANT)
+4. Margin Collapse -> jab do elements ki margin collapse kar rhi hai too phir jo bhi maximum margin wala ko vo hi lagega 
+link : https://miro.medium.com/max/421/0*kAD00byJs8jdmXvr.png
+ -->
